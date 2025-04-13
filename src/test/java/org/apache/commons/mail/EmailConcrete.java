@@ -23,7 +23,7 @@ public class EmailConcrete extends MultiPartEmail {
     }
 
     @Override
-    public String getHostName() throws EmailException {
+    public String getHostName() {
         String hostName = super.getHostName();
         if (hostName == null && getMailSession() != null) {
             return getMailSession().getProperty("mail.host");
