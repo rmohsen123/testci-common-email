@@ -36,3 +36,4 @@ public class EmailConcrete extends MultiPartEmail {
         return super.getMailSession(); // Allow tests to access real session behavior
     }
 }
+
