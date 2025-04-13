@@ -32,7 +32,7 @@ public class EmailConcrete extends MultiPartEmail {
     }
 
     @Override
-    public Session getMailSession() {
+    public Session getMailSession() throws EmailException {
         return super.getMailSession(); // Allow tests to access real session behavior
     }
 }
